@@ -2,14 +2,13 @@ import { StyleSheet, TouchableOpacity, View } from 'react-native'
 import React, { useEffect, useRef } from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Icons from 'react-native-vector-icons/FontAwesome';
-import HomeScreen from '../screens/HomeScreen';
 import NewsScreen from '../screens/NewsScreen';
 import ShopScreen from '../screens/ShopScreen';
 import AccountScreen from '../screens/AccountScreen';
 import Notification from '../components/Notification';
-// import * as Animatable from 'react-native-animatable';
+import HomeScreen from '../screens/HomeScreen';
+import NavigationSearch from '../screens/HomeScreen';
 
-// import Notification from '../components/Notification';
 const Tab = createBottomTabNavigator();
 
 const TabArr = [

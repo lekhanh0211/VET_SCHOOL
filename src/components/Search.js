@@ -1,9 +1,9 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { Button, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { TextInput, TouchableOpacity } from 'react-native-gesture-handler'
 import Icons from 'react-native-vector-icons/FontAwesome'
 
-const Search = () => {
+const Search = ({ navigation }) => {
     return (
         <View style={styles.container}>
             <View style={styles.headL}>
@@ -12,6 +12,7 @@ const Search = () => {
                     <Icons style={{ marginLeft: 20 }} name="search" color={'#000'} size={22} />
                 </TouchableOpacity>
             </View>
+
             <View style={styles.headR}>
                 <TouchableOpacity style={styles.cart}>
                     <Icons style={{ color: '#FFFF' }} name="shopping-cart" color={'#000'} size={25} />
@@ -44,11 +45,11 @@ const styles = StyleSheet.create({
         backgroundColor: '#FFF',
         alignItems: 'center',
         flexDirection: 'row',
-        marginHorizontal:40,
-        paddingHorizontal:15
+        marginHorizontal: 40,
+        paddingHorizontal: 15
     },
     cart: {
-        padding:10,
-        marginHorizontal:5
+        padding: 10,
+        marginHorizontal: 5
     }
 })

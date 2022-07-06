@@ -8,6 +8,7 @@ import NewsScreen from '../screens/NewsScreen';
 import ShopScreen from '../screens/ShopScreen';
 import AccountScreen from '../screens/AccountScreen';
 import Notification from '../components/Notification';
+import NavigationSearch from './NavigationSearch';
 const Tab = createBottomTabNavigator();
 const Tabbar = () => {
   return (
@@ -17,13 +18,12 @@ const Tabbar = () => {
       tabBarActiveTintColor: '#2E86C1',
       tabBarActiveBackgroundColor: 'red'
     }}>
-      <Tab.Screen name="Home" component={HomeScreen} options={{
-        tabBarLabel: "Trang chủ",
+      <Tab.Screen name="Home" component={NavigationSearch} options={{
         tabBarIcon: ({ color, size }) =>
           <Icons name="home" color={color} size={30} />
       }} />
       <Tab.Screen name="News" component={NewsScreen} options={{
-        tabBarLabel: "Tin tức",
+        // tabBarLabel: "Tin tức",
         tabBarIcon: ({ color, size }) =>
           <Icons name="file-text" color={color} size={30} />
       }} />
