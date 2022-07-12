@@ -36,9 +36,9 @@ const BottomTab = () => {
       {TabArr.map((item, index) => {
         return (
           <Tab.Screen key={index} name={item.route} component={item.component}
+            tabBarLabel={item.label}
             options={{
               tabBarShowLabel: false,
-              // tabBarLabel:({item.label}),
               tabBarIcon: ({ color, focused }) => (
                 // <Icons type={item.type} name={focused ? item.activeIcon : item.inActiveIcon} color={"black"} size={22} />)
                 <Icons type={item.type} name={item.name} color={focused ? item.activeColor : item.inActiveColor} size={22} />),
